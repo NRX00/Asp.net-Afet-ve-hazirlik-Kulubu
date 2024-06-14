@@ -1,0 +1,8 @@
+@model  Duyuru
+@{
+    ViewData["Title"] = "DuyuruDetay";
+}
+<h1>@Model.Baslik</h1>
+<p>@Model.KisaBilgi</p>
+<p>@Html.Raw(Model.Detay)</p>
+<p>@Model.EklenmeTarihi</p>

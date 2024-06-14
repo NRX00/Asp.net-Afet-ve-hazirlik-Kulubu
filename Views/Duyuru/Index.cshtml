@@ -1,0 +1,44 @@
+@model List<Duyuru>
+@{
+    ViewData["Title"] = "Duyurular";
+}
+
+<div class="col-12 text-end">
+    <a asp-action="Ekle" class="btn btn-primary">Duyuru Ekle</a>
+</div>
+<div class="col-12">
+    <h1>Duyuru Listesi</h1>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <td>Başlık</td>
+            <td>Eklenme Tarihi</td>
+            <td>Yayın Tarihi</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Baslik</td>
+                <td>@item.EklenmeTarihi</td>
+                <td>@item.YayinBaslamaTarihi</td>
+                <td>
+                    <a asp-action="Duzenle" asp-route-id="@item.Id" class="btn btn-success">
+                        <i class="bi bi-pencil"></i>
+                        Düzenle
+                    </a>
+                </td>
+                  <td>
+                    <a asp-action="Sil" asp-route-id="@item.Id" class="btn btn-danger sil">
+                        <i class="bi bi-trash"></i>
+                        Sil
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

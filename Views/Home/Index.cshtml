@@ -1,0 +1,40 @@
+﻿@model AnasayfaModel
+@{
+    ViewData["Title"] = "AFET VE HAZILIK kULUBÜ";   
+}
+<h1>Duyurular</h1>
+<div class="row">
+    @if (Model.DuyuruListesi != null)
+        foreach (var item in Model.DuyuruListesi)
+        {
+            <div class="col-4">
+                <h3>
+                    <a asp-action="DuyuruDetay" asp-route-id="@item.Id" asp-controller="Home">
+                        @item.Baslik
+                    </a>
+                </h3>
+                <p>@item.KisaBilgi</p>
+                <span>
+                    @item.EklenmeTarihi.ToShortDateString()
+                </span>
+            </div>
+        }
+</div>
+<h1>Etkinlikler</h1>
+<div class="row">
+    @if (Model.EtkinlikListesi != null)
+        foreach (var item in Model.EtkinlikListesi)
+        {
+            <div class="col-4">
+                <h3>
+                    <a asp-action="EtkinlikDetay" asp-route-id="@item.Id" asp-controller="Home">
+                        @item.EtkinlikAd
+                    </a>
+                </h3>
+                <p><img src="@item.Gorsel" alt="@item.EtkinlikAd" width="300" /></p>
+                <span>
+                    @item.TarihSaat.ToShortDateString()
+                </span>
+            </div>
+        }
+</div>

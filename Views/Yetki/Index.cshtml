@@ -1,0 +1,47 @@
+@using Microsoft.AspNetCore.Identity
+@model List<IdentityRole>
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="row">
+    <div class="col-10">
+    <h1>Yetkiler</h1></div>
+    <div class="col-2">
+    <a class="btn btn-primary" asp-action="Yeni">Yeni Yetki</a>
+    </div>
+</div>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Yetki</th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td><a asp-action="Sil" asp-route-id="@item.Id" class="btn btn-danger sil">
+                        <i class="bi bi-trash3"></i>
+                        Sil</a>
+                </td>
+                <td><a asp-action="Duzenle" asp-route-id="@item.Id">Düzenle</a></td>
+                <td><a asp-action="YetkiliKullanicilar" asp-route-id="@item.Id">Yetkili Kullanıcılar</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+@section Scripts{
+<script>
+    $(document).ready(function () {
+        $(".sil").click(function () {
+            return confirm("Silmek istediğinizden emin misiniz?");
+        });
+    })
+</script>
+}

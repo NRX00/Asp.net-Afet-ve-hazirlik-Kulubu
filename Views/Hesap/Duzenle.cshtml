@@ -1,0 +1,48 @@
+@model ProfilDuzenle
+@{
+    ViewData["Title"] = "Kullanıcı düzenle";
+}
+
+<h1 class="text-center">Kullanıcı düzenle</h1>
+<form method="post" asp-antiforgery="true">
+    <input asp-for="Id" type="hidden" />
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="row mb-3">
+        <div class="col-3">
+            <label asp-for="Ad" class="label-control"></label>
+        </div>
+        <div class="col-9">
+            <input asp-for="Ad" class="form-control">
+            <span asp-validation-for="Ad" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-3">
+            <label asp-for="Soyad" class="label-control"></label>
+        </div>
+        <div class="col-9">
+            <input asp-for="Soyad" class="form-control">
+            <span asp-validation-for="Soyad" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-3">
+            <label asp-for="OkulNumarasi" class="label-control"></label>
+        </div>
+        <div class="col-9">
+            <input asp-for="OkulNumarasi" class="form-control">
+            <span asp-validation-for="OkulNumarasi" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-9">
+            <button type="submit" class="btn btn-success">Güncelle</button>
+            <button type="reset" class="btn btn-danger">Sıfırla</button>
+        </div>
+
+    </div>
+</form>
+@section Scripts{
+<partial name="_ValidationScriptsPartial" />
+}

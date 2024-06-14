@@ -1,0 +1,28 @@
+@model YetkiliKullanicilarModel
+@{
+    ViewData["Title"] = "Yetkili Kullanıcılar";
+
+}
+<h1><b>@Model.RoleAd</b> yetkisine sahip kullanıcılar</h1>
+<form method="post" asp-antiforgery="true">
+    
+    <input type="hidden" name="roleAd" value="@Model.RoleAd">
+    <table class="table">
+        @foreach (var k in Model.ButunKullanicilar)
+        {
+            //eğer kullanıcı yetkili kullanıcılar içinde ise checkbox içinde seçili gelmesini sağlayacağız
+            string c = Model.YetkiliKullanicilar.Contains(k) ? "checked" : "";
+            <tr>
+                <td>
+                    <input type="checkbox" value="@k.Id" name="kullaniciId" id="@k.Id" @c>
+                    <label for="@k.Id" class="ps-5">
+                        @k.Ad @k.Soyad
+                    </label>
+                </td>
+            </tr>
+        }
+    </table>
+    <div>
+        <button type="submit" class="btn btn-primary">Kaydet</button>
+    </div>
+</form>

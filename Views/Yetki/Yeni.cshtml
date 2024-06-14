@@ -1,0 +1,14 @@
+@{
+    ViewData["Title"] = "Yeni";
+}
+@if(ViewBag.Hata!=null){
+    <div class="alert-danger alert">
+        @ViewBag.Hata
+    </div>
+}
+
+<form  method="post" asp-antiforgery="true">
+    <input type="text" name="Ad" required placeholder="Yetki adı">
+    <button type="submit" class="btn btn-success">Oluştur</button>
+    <a class="btn btn-primary" asp-action="Index">Yetki Listesi</a> 
+</form>

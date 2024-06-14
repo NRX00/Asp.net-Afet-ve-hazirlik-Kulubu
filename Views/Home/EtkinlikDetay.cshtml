@@ -1,0 +1,11 @@
+@model  Etkinlik
+@{
+    ViewData["Title"] = @Model.EtkinlikAd;
+}
+<h1>@Model.EtkinlikAd</h1>
+<p>@Model.Yer</p>
+<div>
+    <img src="@Model.Gorsel" alt="@Model.EtkinlikAd" width="100%">
+</div>
+<p>@Html.Raw(Model.Detay)</p>
+<p>@Model.TarihSaat</p>

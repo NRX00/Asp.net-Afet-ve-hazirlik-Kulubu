@@ -1,0 +1,60 @@
+@model Duyuru
+@{
+    ViewData["Title"] = "Duyuru Ekle";
+}
+<form method="post" asp-antiforgery="true">
+    <div class="text-danger" asp-validation-summary="All"></div>
+    <div class="row mt-3">
+        <div class="col-3">
+            <label asp-for="Baslik"></label>
+        </div>
+        
+        <div class="col-9">
+            <input asp-for="Baslik" class="form-control">
+            <span asp-validation-for="Baslik" class="text-danger"></span>
+        </div>
+    </div>
+     <div class="row mt-3">
+        <div class="col-3">
+            <label asp-for="KisaBilgi"></label>
+        </div>
+        <div class="col-9">
+            <textarea asp-for="KisaBilgi" class="form-control"></textarea>
+            <span asp-validation-for="KisaBilgi" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-3">
+            <label asp-for="YayinBaslamaTarihi"></label>
+        </div>
+        <div class="col-9">
+            <input asp-for="YayinBaslamaTarihi" class="form-control">
+            <span asp-validation-for="YayinBaslamaTarihi" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-3">
+            <label asp-for="Detay"></label>
+        </div>
+        <div class="col-9">
+            <textarea asp-for="Detay" class="form-control"></textarea>
+            <span asp-validation-for="Detay" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-6 mx-auto">
+            <button type="reset" class="btn-danger btn">Temizle</button>
+            <button type="submit" class="btn-success btn">Kaydet</button>
+        </div>
+    </div>
+</form>
+@section Scripts{
+     <script src="https://cdn.ckeditor.com/4.19.0/standard-all/ckeditor.js"></script>
+      <script>
+    CKEDITOR.replace('Detay', {
+      height: 260,
+      width: 720,
+      removeButtons: 'PasteFromWord'
+    });
+  </script>
+}

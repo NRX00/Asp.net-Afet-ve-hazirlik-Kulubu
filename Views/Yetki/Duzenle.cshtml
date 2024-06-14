@@ -1,0 +1,19 @@
+@using Microsoft.AspNetCore.Identity
+@model IdentityRole
+@{
+    ViewData["Title"] = "Yetki Düzenle";
+}
+<div asp-validation-summary="All" class="text-danger"></div>
+
+<form method="post">
+    <input asp-for="Name" placeholder="Yetki adı" />
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="NormalizedName" />
+    <input type="hidden" asp-for="ConcurrencyStamp" />
+    <button type="submit" class="btn btn-success">Düzenle</button>
+    <a class="btn btn-primary" asp-action="Index">Yetki Listesi</a>
+</form>
+@section Scripts{
+<partial name="_ValidationScriptsPartial" />
+}    ViewData["Title"] = "Duzenle";
+}

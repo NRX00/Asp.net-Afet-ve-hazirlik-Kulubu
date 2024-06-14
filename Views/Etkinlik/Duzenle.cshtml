@@ -1,0 +1,70 @@
+@model Etkinlik
+@{
+    ViewData["Title"] = "Etkinlik Düzenle";
+}
+<form method="post" asp-antiforgery="true">
+    <input asp-for="Id" type="hidden" />
+    <input asp-for="TarihSaat" type="hidden" />
+    <div class="text-danger" asp-validation-summary="All"></div>
+    <div class="row mt-3">
+        <div class="col-3">
+            <label asp-for="EtkinlikAd"></label>
+        </div>
+        <div class="col-9">
+            <input asp-for="EtkinlikAd" class="form-control">
+            <span asp-validation-for="EtkinlikAd" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-3">
+            <label asp-for="TarihSaat"></label>
+        </div>
+        <div class="col-9">
+            <textarea asp-for="TarihSaat" class="form-control"></textarea>
+            <span asp-validation-for="TarihSaat" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-3">
+            <label asp-for="Yer"></label>
+        </div>
+        <div class="col-9">
+            <input asp-for="Yer" class="form-control">
+            <span asp-validation-for="Yer" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-3">
+            <label asp-for="Detay"></label>
+        </div>
+        <div class="col-9">
+            <textarea asp-for="Detay" class="form-control"></textarea>
+            <span asp-validation-for="Detay" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-3">
+            <label asp-for="Gorsel"></label>
+        </div>
+        <div class="col-9">
+            <textarea asp-for="Gorsel" class="form-control"></textarea>
+            <span asp-validation-for="Gorsel" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-6 mx-auto">
+            <button type="reset" class="btn-danger btn">Temizle</button>
+            <button type="submit" class="btn-success btn">Güncelle</button>
+        </div>
+    </div>
+</form>
+@section Scripts{
+<script src="https://cdn.ckeditor.com/4.19.0/standard-all/ckeditor.js"></script>
+<script>
+    CKEDITOR.replace('Detay', {
+        height: 260,
+        width: 720,
+        removeButtons: 'PasteFromWord'
+    });
+</script>
+}

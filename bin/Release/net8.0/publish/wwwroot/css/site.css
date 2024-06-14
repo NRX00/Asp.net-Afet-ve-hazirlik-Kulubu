@@ -1,0 +1,194 @@
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/* Focus styles for interactive elements */
+.btn:focus, .btn:active:focus, 
+.btn-link.nav-link:focus, 
+.form-control:focus, 
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+/* Ensure full height layout */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* Margin for footer */
+body {
+  margin-bottom: 60px;
+}
+
+/* Color and spacing variables for easy maintenance */
+:root {
+  --light-blue: #ADD8E6;
+  --light-blue-dark: #666191;
+  --light-blue-border: #666191;
+  --text-color: #000; /* Black for text */
+  --navbar-bg: var(--light-blue-dark); /* Navbar background */
+  --footer-bg: var(--light-blue-dark); /* Footer background */
+  --link-color: #0000FF; /* Blue for links */
+  --container-bg: #fff; /* White background for content area */
+  --container-padding: 20px;
+  --container-border-radius: 8px;
+  --footer-padding: 10px 0;
+  --spacing: 15px;
+}
+
+/* Body styles */
+body {
+  background-color: var(--light-blue);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: var(--navbar-bg);
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-link {
+  color: var(--text-color);
+  margin-right: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: var(--link-color);
+}
+
+/* Footer styles */
+.footer {
+  background-color: var(--footer-bg);
+  color: var(--text-color);
+  padding: var(--footer-padding);
+  text-align: center;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Container styles */
+.container {
+  background-color: var(--container-bg);
+  padding: var(--container-padding);
+  border: 1px solid var(--light-blue-border);
+  border-radius: var(--container-border-radius);
+  margin-bottom: var(--spacing);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: 0 auto; /* Center the container */
+}
+
+/* Link styles */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--light-blue-dark);
+}
+
+/* Margins for main layout components */
+.header, .footer, .container {
+  margin-bottom: var(--spacing);
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .nav-link {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .footer {
+    padding: 20px 10px;
+    line-height: 1.4;
+  }
+
+  .container {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  body {
+    margin-bottom: 80px; /* Adjust margin for footer */
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+      font-size: 1.5em;
+  }
+
+  p {
+      font-size: 1em;
+      padding: 0 0.5em;
+  }
+
+  img {
+      max-width: 100%;
+  }
+
+  div {
+      padding: 0 0.5em;
+  }
+}
+
+/* Tabletler ve daha büyük ekranlar için Stil */
+@media (min-width: 769px) and (max-width: 1024px) {
+  h1 {
+      font-size: 1.75em;
+  }
+
+  p {
+      font-size: 1.1em;
+  }
+
+  img {
+      max-width: 100%;
+  }
+
+  div {
+      padding: 0 1em;
+  }
+}
+
+/* Masaüstü ve daha büyük ekranlar için Stil */
+@media (min-width: 1025px) {
+  h1 {
+      font-size: 2em;
+  }
+
+  p {
+      font-size: 1.2em;
+  }
+
+  img {
+      max-width: 100%;
+  }
+
+  div {
+      padding: 0 2em;
+  }
+}

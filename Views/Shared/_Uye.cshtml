@@ -1,0 +1,51 @@
+@if (!User.Identity.IsAuthenticated)
+{
+    <ul class="navbar-nav flex-grow-1  justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Hesap" asp-action="Kayit">
+                <i class="bi bi-person-plus"></i>
+                Kayıt</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Hesap" asp-action="Index">
+                <i class="bi bi-box-arrow-in-right"></i>
+                Giriş</a>
+        </li>
+    </ul>
+}
+else
+{
+    <ul class="navbar-nav flex-grow-1  justify-content-end">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+                @User.Identity.Name
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item" asp-action="Profil" asp-controller="Hesap">Profilim</a></li>
+                <li><a class="dropdown-item" asp-action="SifreDegistir" asp-controller="Hesap">Şifre Değiştir</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                @if(User.IsInRole("Etkinlikler")){
+                <li>
+                    <a class="dropdown-item" asp-action="Index" asp-controller="Etkinlik">
+                        Etkinlikler</a>
+                </li>
+                }
+                @if(User.IsInRole("Duyurular")){
+                <li><a class="dropdown-item" asp-action="Index" asp-controller="Duyuru">Duyurular</a>
+                </li>
+                }
+                <li><a class="dropdown-item" asp-controller="Hesap" asp-action="Liste">Kullanıcılar</a></li>
+                @if(User.IsInRole("Yetkiler")){
+                <li><a class="dropdown-item" asp-controller="Yetki" asp-action="Index">Yetkiler</a></li>
+                }
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Hesap" asp-action="Cikis">Çıkış</a>
+        </li>
+    </ul>
+
+}

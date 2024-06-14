@@ -1,0 +1,39 @@
+@model List<AppUser>
+@{
+    ViewData["Title"] = "Kullanıcılar";
+}
+<table class="table table-bordered table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th>Ad</th>
+            <th>Soyad</th>
+            <th>Okul Numarası</th>
+            <th>Email</th>
+            @if (User.IsInRole("Kullanıcı Düzenle"))
+            { 
+                <th></th>
+                <th></th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var k in Model)
+        {
+            <tr>
+                <td>@k.Ad</td>
+                <td>@k.Soyad</td>
+                <td>@k.OkulNumarasi</td>
+                <td>@k.Email</td>
+                @if (User.IsInRole("Kullanıcı Düzenle"))
+                { 
+                    <td>
+                        <a asp-action="Duzenle" asp-route-id="@k.Id" class="btn btn-success">Düzenle</a>
+                    </td>
+                    <td>
+                        <a asp-action="Sil"  asp-route-id="@k.Id" class="sil btn btn-danger">Sil</a>
+                    </td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>

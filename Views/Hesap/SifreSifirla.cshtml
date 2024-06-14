@@ -1,0 +1,40 @@
+@model SifreSifirla
+@{
+    ViewData["Title"] = "SifreSifirla";
+    string e=Context.Request.Query["Email"];
+    string t=Context.Request.Query["Token"];
+}
+<form method="post">
+    <div class="text-danger" asp-validation-summary="All"></div>
+    <input type="hidden" name="Email" value="@e" />
+    <input type="hidden" name="Token" value="@t"/>
+<h1 class=" text-center">Şifre sıfırla</h1>
+    <div class="row mt-3">
+        <div class="col-3">
+            <label asp-for="Sifre" class="label-control"></label>
+        </div>
+        <div class="col-9">
+            <input asp-for="Sifre" class="form-control">
+            <span asp-validation-for="Sifre" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-3">
+            <label asp-for="SifreTekrari" class="label-control"></label>
+        </div>
+        <div class="col-9">
+            <input asp-for="SifreTekrari" class="form-control">
+            <span asp-validation-for="SifreTekrari" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="row mt-3">
+
+        <div class="col-9 offset-3">
+            <button type="reset" class="btn btn-danger">Gönder</button>
+            <button type="submit" class="btn btn-success">Gönder</button>
+        </div>
+    </div>
+</form>
+@section Scripts{
+<partial name="_ValidationScriptsPartial" />
+}

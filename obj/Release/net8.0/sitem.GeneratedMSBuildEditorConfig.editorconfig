@@ -1,0 +1,143 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = sitem
+build_property.RootNamespace = sitem
+build_property.ProjectDir = C:\Users\eyup5\Desktop\sitem\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\eyup5\Desktop\sitem
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/eyup5/Desktop/sitem/Views/Duyuru/Duzenle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHV5dXJ1XER1emVubGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eyup5/Desktop/sitem/Views/Duyuru/Ekle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHV5dXJ1XEVrbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eyup5/Desktop/sitem/Views/Duyuru/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHV5dXJ1XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eyup5/Desktop/sitem/Views/Etkinlik/Duzenle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXRraW5saWtcRHV6ZW5sZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eyup5/Desktop/sitem/Views/Etkinlik/Ekle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXRraW5saWtcRWtsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eyup5/Desktop/sitem/Views/Etkinlik/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXRraW5saWtcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eyup5/Desktop/sitem/Views/Hesap/Duzenle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVzYXBcRHV6ZW5sZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eyup5/Desktop/sitem/Views/Hesap/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVzYXBcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eyup5/Desktop/sitem/Views/Hesap/Kayit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVzYXBcS2F5aXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eyup5/Desktop/sitem/Views/Hesap/Liste.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVzYXBcTGlzdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eyup5/Desktop/sitem/Views/Hesap/Profil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVzYXBcUHJvZmlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eyup5/Desktop/sitem/Views/Hesap/SifreDegistir.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVzYXBcU2lmcmVEZWdpc3Rpci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eyup5/Desktop/sitem/Views/Hesap/SifremiUnuttum.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVzYXBcU2lmcmVtaVVudXR0dW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eyup5/Desktop/sitem/Views/Hesap/SifreSifirla.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVzYXBcU2lmcmVTaWZpcmxhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eyup5/Desktop/sitem/Views/Hesap/YetkiHatasi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVzYXBcWWV0a2lIYXRhc2kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eyup5/Desktop/sitem/Views/Home/DuyuruDetay.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEdXl1cnVEZXRheS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eyup5/Desktop/sitem/Views/Home/EtkinlikDetay.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFdGtpbmxpa0RldGF5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eyup5/Desktop/sitem/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eyup5/Desktop/sitem/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eyup5/Desktop/sitem/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eyup5/Desktop/sitem/Views/Shared/_basarili.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9iYXNhcmlsaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eyup5/Desktop/sitem/Views/Shared/_hata.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9oYXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eyup5/Desktop/sitem/Views/Shared/_Uye.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9VeWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eyup5/Desktop/sitem/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eyup5/Desktop/sitem/Views/Yetki/Duzenle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWWV0a2lcRHV6ZW5sZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eyup5/Desktop/sitem/Views/Yetki/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWWV0a2lcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eyup5/Desktop/sitem/Views/Yetki/Yeni.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWWV0a2lcWWVuaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eyup5/Desktop/sitem/Views/Yetki/YetkiliKullanicilar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWWV0a2lcWWV0a2lsaUt1bGxhbmljaWxhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eyup5/Desktop/sitem/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eyup5/Desktop/sitem/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eyup5/Desktop/sitem/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-8eh5vh8id6

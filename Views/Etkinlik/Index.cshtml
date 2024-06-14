@@ -1,0 +1,46 @@
+@model List<Etkinlik>
+@{
+    ViewData["Title"] = "Etkinlikler";
+}
+
+<div class="col-12 text-end">
+    <a asp-action="Ekle" class="btn btn-primary">Etkinlik Ekle</a>
+</div>
+<div class="col-12">
+    <h1>Etkinlik Listesi</h1>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <td></td>
+            <td>Etkinlik Adı</td>
+            <td>Etkinlik Tarihi</td>
+            <td>Etkinlik Alanı</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td><img src="@item.Gorsel" alt="@item.EtkinlikAd" width="200"></td>
+                <td>@item.EtkinlikAd</td>
+                <td>@item.TarihSaat</td>
+                <td>@item.Yer</td>
+                <td>
+                    <a asp-action="Duzenle" asp-route-id="@item.Id" class="btn btn-success">
+                        <i class="bi bi-pencil"></i>
+                        Düzenle
+                    </a>
+                </td>
+                  <td>
+                    <a asp-action="Sil" asp-route-id="@item.Id" class="btn btn-danger sil">
+                        <i class="bi bi-trash"></i>
+                        Sil
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
